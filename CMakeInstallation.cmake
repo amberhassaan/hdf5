@@ -70,6 +70,12 @@ configure_package_config_file (
     INSTALL_PREFIX "${CMAKE_CURRENT_BINARY_DIR}"
 )
 
+write_basic_package_version_file (
+  "${HDF5_BINARY_DIR}${CMAKE_FILES_DIRECTORY}/${HDF5_PACKAGE}${HDF_PACKAGE_EXT}-config-version.cmake"
+  VERSION ${HDF5_PACKAGE_VERSION}
+  COMPATIBILITY SameMinorVersion
+)
+
 #-----------------------------------------------------------------------------
 # Configure the hdf5-config.cmake file for the install directory
 #-----------------------------------------------------------------------------
