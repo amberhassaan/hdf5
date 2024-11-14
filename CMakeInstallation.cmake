@@ -71,12 +71,12 @@ configure_package_config_file (
 )
 
 write_basic_package_version_file (
-  "${HDF5_BINARY_DIR}${CMAKE_FILES_DIRECTORY}/${HDF5_PACKAGE}${HDF_PACKAGE_EXT}-config-version.cmake"
+  "${HDF5_BINARY_DIR}/${HDF5_PACKAGE}${HDF_PACKAGE_EXT}-config-version.cmake"
   VERSION ${HDF5_PACKAGE_VERSION}
   COMPATIBILITY SameMinorVersion
 )
 install (
-    FILES ${HDF5_BINARY_DIR}${CMAKE_FILES_DIRECTORY}/${HDF5_PACKAGE}${HDF_PACKAGE_EXT}-config-version.cmake
+    FILES ${HDF5_BINARY_DIR}/${HDF5_PACKAGE}${HDF_PACKAGE_EXT}-config-version.cmake
     DESTINATION ${HDF5_INSTALL_CMAKE_DIR}
     COMPONENT configinstall
 )
