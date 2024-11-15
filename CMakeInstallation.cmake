@@ -73,7 +73,7 @@ configure_package_config_file (
 write_basic_package_version_file (
   "${HDF5_BINARY_DIR}/${HDF5_PACKAGE}${HDF_PACKAGE_EXT}-config-version.cmake"
   VERSION ${HDF5_PACKAGE_VERSION}
-  COMPATIBILITY SameMinorVersion
+  COMPATIBILITY AnyNewerVersion
 )
 install (
     FILES ${HDF5_BINARY_DIR}/${HDF5_PACKAGE}${HDF_PACKAGE_EXT}-config-version.cmake
