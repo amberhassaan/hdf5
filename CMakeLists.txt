@@ -55,6 +55,7 @@ endif ()
     # set (HDF5_EXTERNALLY_CONFIGURED 1)
   # endif()
 # endif()
+set(HDF5_EXTERNALLY_CONFIGURED OFF)
 #-----------------------------------------------------------------------------
 # Instructions for use : Sub-Project Build
 #

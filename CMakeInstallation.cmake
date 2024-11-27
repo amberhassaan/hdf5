@@ -98,7 +98,8 @@ if (NOT HDF5_EXTERNALLY_CONFIGURED)
   write_basic_package_version_file (
     "${HDF5_BINARY_DIR}${CMAKE_FILES_DIRECTORY}/${HDF5_PACKAGE}${HDF_PACKAGE_EXT}-config-version.cmake"
     VERSION ${HDF5_PACKAGE_VERSION}
-    COMPATIBILITY SameMinorVersion
+    # COMPATIBILITY SameMinorVersion
+    COMPATIBILITY AnyNewerVersion
   )
   #configure_file (
   #    ${HDF_RESOURCES_DIR}/hdf5-config-version.cmake.in
